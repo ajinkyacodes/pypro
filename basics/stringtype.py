@@ -1,4 +1,6 @@
 # Single line string
+from itertools import count
+
 s = "You are awesome"
 print(s)
 
@@ -29,3 +31,24 @@ print(s[0:9:2])
 # Reverse the string
 print(s[15::-1])
 print(s[::-1])
+
+# stripping the spaces
+str = "    You are awesome    "
+print(str.strip())
+print(str.lstrip())
+print(str.rstrip())
+
+# Locate
+print(str.find("awe",0,len(s)))
+print(str.find("awe",0,8))
+
+# count character
+print(str.count("a"))
+
+# replace
+print(str.replace("awesome", "super"))
+
+# text transformation
+print(str.upper())
+print(str.lower())
+print(str.title())
